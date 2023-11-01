@@ -1,0 +1,9 @@
+def are_anagaram(sort1,sort2):
+    return sorted(sort1) == sorted(sort2)
+sort1= input('enter the string')
+sort2= input('enter the string')
+
+if are_anagaram(sort1,sort2):
+    print('they are')
+else:
+    print('they are not')
