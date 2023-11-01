@@ -1,0 +1,7 @@
+input_list1 = input("enter the list")
+list1=[int(x) for x in input_list1.split(',')]
+input_list2 = input("enter the list")
+list2=[int(x) for x in input_list2.split(',')]
+merged_list= list1+list2
+sorted_list= sorted(merged_list)
+print("the merged and sorted list",sorted_list)
