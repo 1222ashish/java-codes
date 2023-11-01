@@ -1,0 +1,11 @@
+def multiply_dictionary_items(dictionary):
+    result = 1
+    for key, value in dictionary.items():
+        result *= value
+    return result
+
+# Example usage:
+my_dict = {'a': 2, 'b': 3, 'c': 4}
+
+result = multiply_dictionary_items(my_dict)
+print("Multiplication of dictionary values:", result)
