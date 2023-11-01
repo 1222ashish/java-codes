@@ -1,0 +1,11 @@
+start= int(input(" enter the start range:"))
+end = int(input(" Enter the end range:"))
+result=[]
+for i in range (start, end+1):
+    if (i%7==0 and i%5==0):
+        result.append(i)
+
+if result:
+    print(" the number are:", result)
+else:
+    print(" no such number")
