@@ -1,0 +1,12 @@
+import string
+
+def is_panagram(ashish):
+    alphabet=set(string.ascii_lowercase)
+    ashish=ashish.lower()
+
+    return set(ashish)>= alphabet
+test_line=input('enter a sentence')
+if is_panagram(test_line):
+    print('it is')
+else:
+    print('its not')
