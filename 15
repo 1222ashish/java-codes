@@ -1,0 +1,12 @@
+class MyStringPrinter:
+    def __init__(self):
+        self.user_input = ""
+
+    def accept_input(self):
+        self.user_input = input("Enter a string: ")
+
+    def print_input(self):
+        if self.user_input:
+            print("You entered:", self.user_input)
+        else:
+            print("No input provided.")
