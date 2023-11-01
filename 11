@@ -1,0 +1,14 @@
+def map_dict(key,values):
+    if len(key) != len(values):
+        raise ValueError("the input lists should be equal")
+    
+    result_dic={}
+    for i in range(len(key)):
+        result_dic[key[i]]=values[i]
+    
+    return result_dic
+
+key=[1,2,3]
+values=['A','B','E']
+result=map_dict(key,values)
+print("the strng",result)
