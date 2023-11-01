@@ -1,0 +1,4 @@
+i_range=int(input('enter the lowwest range'))
+u_range=int(input('enter hight rages'))
+tuple=[(x,x**2) for x in range(i_range,u_range+1)]
+print(tuple)
