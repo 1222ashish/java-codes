@@ -1,0 +1,16 @@
+import math
+
+def cosine_series(x, n_terms):
+    result = 0
+
+    for n in range(n_terms):
+        term = ((-1) ** n) * (x ** (2 * n)) / math.factorial(2 * n)
+        result += term
+
+    return result
+
+x = float(input("Enter the value of x (in radians): "))
+n = int(input("Enter the number of terms in the series: "))
+
+cosine_sum = cosine_series(x, n)
+print(f"The sum of the cosine series for x = {x} with {n} terms is approximately {cosine_sum:.4f}")
