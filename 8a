@@ -1,0 +1,18 @@
+def exchange_first_last_char(input_string):
+    if len(input_string) < 2:
+        return input_string  # String too short to exchange characters
+
+    first_char = input_string[0]
+    last_char = input_string[-1]
+    middle_chars = input_string[1:-1]
+
+    exchanged_string = last_char + middle_chars + first_char
+
+    return exchanged_string
+
+# Example usage:
+original_string = input('enter a string')
+new_string = exchange_first_last_char(original_string)
+
+print("Original string:", original_string)
+print("Exchanged string:", new_string)
