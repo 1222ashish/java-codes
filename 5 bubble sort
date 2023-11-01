@@ -1,0 +1,25 @@
+a = []
+n = int(input("Enter the number of elements: "))
+
+for i in range(1, n + 1):
+    b = int(input('Enter the element: '))
+    a.append(b)
+
+# Bubble Sort
+for i in range(n):
+    for j in range(0, n - i - 1):
+        if a[j] > a[j + 1]:
+            temp = a[j]
+            a[j] = a[j + 1]
+            a[j + 1] = temp
+
+# Print the sorted list
+print("Sorted list:", a)
+
+# Check if there are at least 2 elements in the list
+if len(a) < 2:
+    print("The list should have at least two elements to find the second largest.")
+else:
+    # The second largest number is at index -2
+    second_largest = a[-2]
+    print("The second largest number is:", second_largest)
