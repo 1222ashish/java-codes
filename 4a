@@ -1,0 +1,5 @@
+r=input("enter a list")
+num=[int(x) for x in r.split(',')]
+c=int(input('enter the number to be counted'))
+count=num.count(c)
+print("this is the total it is repeated",count)
